@@ -1,0 +1,31 @@
+.navbar {
+    /* A MÁGICA ACONTECE AQUI */
+    position: fixed; /* Fixa o elemento na tela */
+    top: 0;          /* Cola no topo */
+    left: 0;         /* Cola na esquerda */
+    
+    /* ESTÉTICA E LAYOUT */
+    width: 100%;     /* Garante que ocupe toda a largura */
+    height: 35px;    /* Defina uma altura fixa para a navbar */
+    padding: 30px; /* Espaçamento interno */
+    color: white;
+    z-index: 1000;   /* MUITO IMPORTANTE: Garante que a navbar fique sobre todo o outro conteúdo */
+  
+    /* Layout interno com Flexbox */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
