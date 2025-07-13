@@ -1,0 +1,32 @@
+.navbar {
+    /* A MÁGICA ACONTECE AQUI */
+    position: fixed; /* Fixa o elemento na tela */
+    top: 0;          /* Cola no topo */
+    left: 0;         /* Cola na esquerda */
+    
+    /* ESTÉTICA E LAYOUT */
+    width: 100%;     /* Garante que ocupe toda a largura */
+    height: 35px;    /* Defina uma altura fixa para a navbar */
+    padding: 20px 30px 20px 30px; /* Espaçamento interno */
+    color: white;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça os itens */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    justify-content: left;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    justify-content: right;
+  }

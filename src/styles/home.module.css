@@ -10,3 +10,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.aboutContainer {
+    background-color: #f4f7f6;
+    padding: 40px;
+}
+
+.aboutContainer h1 {
+    text-align: center;
+    padding: 0 0 40px 0;
+}

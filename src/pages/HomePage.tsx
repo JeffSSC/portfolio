@@ -1,5 +1,5 @@
 import Card from '../components/card/Card';
-import styles from '../styles/background.module.css';
+import styles from '../styles/home.module.css';
 import codeconImage from '../assets/codecon.jpg';
 import mikaelImage from '../assets/mikael.jpg';
 import portfolioImage from '../assets/portfolio.jpg';
@@ -38,6 +38,10 @@ function HomePage() {
       <div className={styles.backgroundHome}>
         <h1>Olá, sou Jefferson!</h1>
         <p>Bem vindo ao meu portfólio!</p>
+      </div>
+      <div className={styles.aboutContainer}>
+        <h1>Quem sou eu?</h1>
+        <p>Sou um desenvolvedor apaixonado por tecnologia e inovação. Aqui você pode conhecer alguns dos meus projetos mais recentes.</p>
       </div>
       <div className="appContainer">
         <h1>Projetos</h1>
