@@ -3,6 +3,7 @@ import styles from '../styles/home.module.css';
 import codeconImage from '../assets/codecon.jpg';
 import mikaelImage from '../assets/mikael.jpg';
 import portfolioImage from '../assets/portfolio.jpg';
+import me from '../assets/me.jpg';
 
 function HomePage() {
 
@@ -41,7 +42,18 @@ function HomePage() {
       </div>
       <div className={styles.aboutContainer}>
         <h1>Quem sou eu?</h1>
-        <p>Sou um desenvolvedor apaixonado por tecnologia e inovação. Aqui você pode conhecer alguns dos meus projetos mais recentes.</p>
+        <div className={styles.aboutContent}>
+          <div className={styles.profileImage}>
+            <img src={me} alt="Jefferson" />
+          </div>
+          <div className={styles.aboutText}>
+            <p>Me chamo Jefferson, tenho 21 anos e sou estudante de Ciências da Computação na Unisociesc.
+Sou apaixonado por tecnologia e fotografia, gosto de participar de eventos de tecnologia em especial hackathons!
+</p>
+            <p>Tenho experiência profissional com Python, API Rest, Docker, Nginx, AWS e NodeJS.
+Além dessas tecnologias tenho estudado ReactJS, PostgreSQL, Machine Learning e estou em busca da certificação AWS Cloud Practitioner. </p>
+          </div>
+        </div>
       </div>
       <div className="appContainer">
         <h1>Projetos</h1>

@@ -5,9 +5,12 @@
 }
 
 .appContainer {
-    padding: 40px;
     background-color: #f4f7f6;
     text-align: center;
+}
+
+.appContainer h1 {
+    padding: 40px;
 }
 
 .cardsContainer {
