@@ -32,7 +32,7 @@ function HomePage() {
       description: 'Uma mão robótica que joga UNO, desenvolvida com Python, Yolo e OpenCV.',
       altText: 'Mikael - LeRobot jogando UNO',
       githubUrl: 'https://github.com/LuanPonick/Mikael'
-    },
+    }
   ];
 
 
@@ -90,7 +90,7 @@ function HomePage() {
       title: 'PostgreSQL',
       altText: 'PostgreSQL'
     }
-  ]
+  ];
 
 
   return (
