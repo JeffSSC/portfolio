@@ -4,19 +4,17 @@
     box-sizing: border-box;
 }
 
-.appContainer {
+.appContainer, .contactContainer {
     background-color: #f4f7f6;
     text-align: center;
 }
 
-.appContainer h1 {
-    padding: 40px;
-}
 
-.cardsContainer {
+
+.cardsContainer, .contactContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 2rem;
+    padding: 2rem;
 }
