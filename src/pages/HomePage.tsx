@@ -41,7 +41,7 @@ function HomePage() {
     {
       imageUrl: 'https://img.icons8.com/?size=512&id=8808&format=png&color=000000',
       title: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/jefferson-silva-2b0a1b1b6/',
+      link: 'https://www.linkedin.com/in/jefferson-silva-caires-8b2429172/',
       altText: 'LinkedIn'
     },
     {
