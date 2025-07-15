@@ -5,9 +5,10 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
         <p className={styles.logo}>JeffSC</p>
-        <div>
-        <Link to="/" className={styles.navLinks}>Home</Link>
-        <Link to="/about" className={styles.navLinks}>Fotografias</Link>
+        <div className={styles.navLinksContainer}>
+          <Link to="/" className={styles.navLinks}>Home</Link>
+          <a href="" className={styles.navLinks}><p>Curriculum</p></a>
+          <Link to="/about" className={styles.navLinks}>Fotografias</Link>
         </div>
     </nav>
   );

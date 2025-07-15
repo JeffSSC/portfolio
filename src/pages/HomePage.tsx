@@ -55,10 +55,12 @@ function HomePage() {
 
   return (
     <div>
+      {/* Background Section */}
       <div className={styles.backgroundHome}>
         <h1>Olá, sou Jefferson!</h1>
         <p>Bem vindo ao meu portfólio!</p>
       </div>
+      {/* About Section */}
       <div className={styles.aboutContainer}>
         <h1>Quem sou eu?</h1>
         <div className={styles.aboutContent}>
@@ -68,15 +70,23 @@ function HomePage() {
           <div className={styles.aboutText}>
             <p>Sou Jefferson, estudante de Ciências da Computação (Unisociesc) e desenvolvedor em formação. 
               Busco ativamente aplicar meu conhecimento acadêmico em desafios práticos do mercado.
-</p>
+            </p>
             <p>Tenho experiência profissional com Python, API Rest, Docker, Nginx, AWS e NodeJS.
-Além dessas tecnologias tenho estudado ReactJS, PostgreSQL, Machine Learning e estou em busca da certificação AWS Cloud Practitioner. </p>
+              Além dessas tecnologias tenho estudado ReactJS, PostgreSQL, Machine Learning e estou em busca da certificação AWS Cloud Practitioner. 
+            </p>
           </div>
         </div>
       </div>
-      <div className="appContainer">
+      {/* Technology Section */}
+      <div className="techContainer">
+        <h1>Tecnologias</h1>
+        <div className="techContent">
+        </div>
+      </div>
+      {/* Project Section */}
+      <div className="cardsContainer">
         <h1>Projetos</h1>
-        <div className="cardsContainer">
+        <div className="cardsContent">
           {places.map((place) => (
             <Card
               imageUrl={place.imageUrl}
@@ -88,6 +98,7 @@ Além dessas tecnologias tenho estudado ReactJS, PostgreSQL, Machine Learning e 
           ))}
         </div>
       </div>
+      {/* Contact Section */}
       <div className="contactContainer">
         <h1>Entre em contato comigo</h1>
         <div className="contactContent">
