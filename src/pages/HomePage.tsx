@@ -1,5 +1,6 @@
 import Card from '../components/card/Card';
 import ContactCard from '../components/contact/ContactCard';
+import TechCard from '../components/techCard/TechCard';
 import styles from '../styles/home.module.css';
 import codeconImage from '../assets/codecon.jpg';
 import mikaelImage from '../assets/mikael.jpg';
@@ -8,7 +9,9 @@ import me from '../assets/me.jpg';
 
 function HomePage() {
 
-  const places = [
+
+  // list of projects
+  const projects = [
     {
       imageUrl: portfolioImage,
       title: 'Portfólio',
@@ -32,6 +35,8 @@ function HomePage() {
     },
   ];
 
+
+  // Contact links
   const contactLinks = [
     {
       imageUrl: 'https://img.icons8.com/?size=512&id=8808&format=png&color=000000',
@@ -52,6 +57,41 @@ function HomePage() {
       altText: 'Gmail'
     }
   ];
+
+  // List of technologies
+  const techs = [
+    {
+      imageUrl: 'https://img.icons8.com/?size=512&id=l75OEUJkPAk4&format=png&color=000000',
+      title: 'Python',
+      altText: 'Python'
+    },
+    {
+      imageUrl: 'https://img.icons8.com/?size=512&id=54087&format=png&color=000000',
+      title: 'Node.js',
+      altText: 'Node.js'
+    },
+    {
+      imageUrl: 'https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png&color=000000',
+      title: 'React.js',
+      altText: 'React.js'
+    },
+    {
+      imageUrl: 'https://img.icons8.com/?size=512&id=22813&format=png&color=000000',
+      title: 'Docker',
+      altText: 'Docker'
+    },
+    {
+      imageUrl: 'https://img.icons8.com/?size=512&id=wU62u24brJ44&format=png&color=000000',
+      title: 'AWS',
+      altText: 'AWS'
+    },
+    {
+      imageUrl: 'https://img.icons8.com/?size=512&id=JRnxU7ZWP4mi&format=png&color=000000',
+      title: 'PostgreSQL',
+      altText: 'PostgreSQL'
+    }
+  ]
+
 
   return (
     <div>
@@ -81,19 +121,26 @@ function HomePage() {
       <div className="techContainer">
         <h1>Tecnologias</h1>
         <div className="techContent">
+          {techs.map((tech) => (
+            <TechCard
+              imageUrl={tech.imageUrl}
+              title={tech.title}
+              altText={tech.altText}
+            />
+          ))}
         </div>
       </div>
       {/* Project Section */}
       <div className="cardsContainer">
         <h1>Projetos</h1>
         <div className="cardsContent">
-          {places.map((place) => (
+          {projects.map((project) => (
             <Card
-              imageUrl={place.imageUrl}
-              title={place.title}
-              description={place.description}
-              altText={place.altText}
-              githubUrl={place.githubUrl}
+              imageUrl={project.imageUrl}
+              title={project.title}
+              description={project.description}
+              altText={project.altText}
+              githubUrl={project.githubUrl}
             />
           ))}
         </div>
